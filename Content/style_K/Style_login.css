@@ -1,97 +1,72 @@
-﻿* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+﻿body {
+    font-family: Arial;
 }
 
-body {
-    background-color: #f5f5f5;
+.login {
+    width: 450px;
+    height: 300px;
+    text-align: left;
+}
+
+    .login h2 {
+    }
+
+    .login input {
+        width: 460px;
+        height: 45px;
+        margin-bottom: 35px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+
+    .login button {
+        width: 460px;
+        height: 45px;
+        margin-bottom: 35px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        color: white;
+        background-color: cornflowerblue;
+    }
+
+    .login a {
+        float: right;
+        padding-right: 10px;
+        text-decoration: none;
+    }
+
+.check {
+    float: left;
+    padding-left: 10px;
+}
+
+    .check input {
+        width: 15px;
+        height: 15px;
+    }
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
     display: flex;
     justify-content: center;
-    padding: 40px;
-}
-
-.cart_container {
-    background: white;
-    width: 400px;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h3 {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-label {
-    font-size: 14px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.gender {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.shipping-method {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 10px;
-}
-
-.checkbox {
-    display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 14px;
+    background-color: white;
 }
 
-.total {
+    .left img {
+        width: 80%;
+        max-width: 500px;
+    }
+
+.right {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-    font-weight: bold;
-}
-
-    .total span {
-        color: red;
-    }
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-.note {
-    text-align: center;
-    font-size: 12px;
-    color: #666;
-    margin-top: 10px;
-}
-
-#link_btn {
-    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
 }
